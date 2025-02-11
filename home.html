@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        background-color: #333; /* Change background color as needed */
+        color: #fff; /* Change text color as needed */
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('background_image.jpg'); /* Change 'background_image.jpg' to the path of your background image */
+        background-size: cover;
+        background-position: center;
+        animation: moveBackground 20s linear infinite;
+
+    }
+    @keyframes moveBackground {
+        from { background-position: 0 0; }
+        to { background-position: 100% 0; }
+    }
+    #content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        letter-spacing: 0.85px;
+        font-family:'Times New Roman', Times, serif;
+        margin-top:30px;
+    }
+    #image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        filter: brightness(130%); /* Adjust brightness as needed */
+        border-radius: 15px; /* Add curved edges */
+        border:3px solid black;
+    }
+    h1, p {
+        margin: 10px 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navigation-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        border-bottom: 3px solid rgb(200, 166, 166);
+       
+        
+    }
+    .navigation button {
+        margin-left: 10px; /* Increase space between buttons */
+        margin-right: 10px;
+        padding: 8px 20px; /* Increased padding for the buttons */
+        background-color: #555;
+        border: none;
+        border-radius: 20px; /* Curved edges */
+        color: #fff;
+        cursor: pointer;
+        letter-spacing: 1px; /* Add spacing between letters */
+        border-bottom: 2px solid white;
+        margin-bottom:20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+
+    }
+    .alpr-heading {
+        margin-right: auto;
+        color: white; /* Push ALPR heading to the left */
+        margin-bottom:30px;
+       
+        
+    }
+
+    .alpr-heading:hover{
+        color: black;
+    }
+
+
+
+    a {
+        text-decoration: none;
+        margin-left: 10px; /* Increase space between buttons */
+        margin-right: 10px;
+        padding: 8px 20px; /* Increased padding for the buttons */
+        background-color: #555;
+        border: none;
+        border-radius: 20px; /* Curved edges */
+        color: #fff;
+        cursor: pointer;
+        letter-spacing: 1px; /* Add spacing between letters */
+        border-bottom: 2px solid white;
+        margin-bottom:20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    a:hover{
+background-color: red;
+    }
+
+    
+</style>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="content">
+        <h1>Welcome to our website!</h1>
+        <p>We specialize in developing state-of-the-art Automatic License Plate Recognition (ALPR) systems.</p>
+        <br>
+        <div id="image-container">
+            <img src="https://www.universeoptics.com/wp-content/uploads/Traffic_Cameras.jpg" class="image"> <!-- Change 'image1.jpg', 'image2.jpg', etc. to the paths of your images -->
+            <img src="https://www.researchgate.net/publication/355102486/figure/fig4/AS:1076640469786626@1633702499803/The-effect-of-vehicle-license-plate-recognition-from-the-perspective-of-traffic.ppm" class="image">
+            <img src="https://media.istockphoto.com/id/1336889543/video/video-surveillance-on-the-motorway-license-plate-reading-camera.jpg?s=640x640&k=20&c=_cwc83PmbvR67RKS5atCMvP9rl43xdhukB3eZBbbylg=" class="image">
+            <img src="https://www.efkonindia.com/images/inner-header-products-rlvd.jpg" class="image">
+            <img src="https://intertraff.com/wp-content/uploads/2023/02/VMMR.jpg" class="image">
+            <img src="https://5.imimg.com/data5/RC/NQ/MY-29870930/traffic-camera-500x500.jpg" class="image">
+        </div>
+        <p>The Automatic License Plate Recognition (ALPR) system revolutionizes vehicle monitoring and management across various industries and applications. Its versatility and precision make it indispensable in law enforcement, enabling authorities to swiftly identify vehicles of interest, track stolen vehicles, and enforce traffic regulations effectively. In the realm of parking management, ALPR systems streamline operations by automating entry and exit processes, optimizing space utilization, and enhancing security. Moreover, ALPR technology plays a crucial role in toll collection, facilitating seamless transactions and minimizing congestion at toll booths. Beyond these core applications, ALPR systems find utility in diverse settings, including border control, vehicle tracking for logistics and fleet management, and even in smart cities initiatives for traffic monitoring and urban planning. With its ability to enhance security, efficiency, and convenience, the ALPR system stands as a cornerstone of modern transportation management solutions, driving innovation and effectiveness across a multitude of sectors.</p>
+        <br>
+    </div>
+    <div class="navigation-container">
+        <h1 class="alpr-heading">Automatic License Number Plate Recognition System</h1>
+        <div class="navigation">
+            <!-- <button onclick="window.location.href='home.html'">Home</button>
+            <button onclick="window.location.href='index.html'">Prediction</button> -->
+            <a href="/">Home</a>
+            <a href="/detect">Detect</a>
+            
+        </div>
+    </div>
+</body>
+</html>
